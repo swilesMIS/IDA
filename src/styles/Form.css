@@ -1,0 +1,134 @@
+.form-group {
+    margin-bottom: 15px;
+  }
+  .form-group.inline-group {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    flex-wrap: nowrap; /* Prevents wrapping */
+  }
+
+  .form-group.inline-group label {
+    margin-right: 5px; /* Adds some spacing between the label and the input */
+    white-space: nowrap; /* Prevents the label from wrapping */
+  }
+  
+  .form-group.inline-group input[type="text"] {
+    width: auto; /* Allows the input to size according to its content */
+    flex-grow: 1; /* Takes up remaining space */
+    margin-right: 10px; /* Adds spacing between the input and the checkbox */
+  }
+  
+  .form-group.inline-group .checkbox-label {
+    margin-right: 5px; /* Adds some spacing between the checkbox and its label */
+  }
+  
+  .form-group.inline-group input[type="checkbox"] {
+    margin-right: 10px; /* Adds some spacing to the right of the checkbox */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative; 
+    padding-left: 0 !important;
+  }
+  
+  /* Overrides to remove the circle from labels in the form */
+  .form-group label::before,
+  .form-group label::after {
+    content: none !important; 
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .options-label {
+    padding-left: 20px;
+  }
+
+  .option-item {
+    padding-left: 20px;
+  }
+  
+  /* Clear the floats */
+  .form-footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .input-container input[type="text"] {
+    flex-grow: 1; /* Adjust this as needed to allocate space for the input */
+    margin-right: 10px; /* Space between the input and the checkbox */
+  }
+  
+  .input-container .checkbox-label {
+    margin-right: 5px; /* Space between the "Is Active?" label and the checkbox */
+  }
+  
+  .input-container input[type="checkbox"] {
+    margin: 0 10px 0 0; /* Top, right, bottom, left spacing around checkbox */
+  }
+  
+  
+  .delete-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .add-option-button {
+    padding: 5px 10px; 
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .add-option-group {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .inline-group {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: start; /* Space between the items */
+    flex-wrap: nowrap;
+  }
+  
+  .checkbox-label {
+    margin-bottom: 0; /* Prevents additional space below the label */
+  }
+
+  .inline-group input[type="text"] {
+    flex-grow: 1; /* Allows the input to grow and fill the space */
+    margin-right: 10px; /* Space between the input and the checkbox */
+  }
+  
+  .inline-group .checkbox-label {
+    margin-right: 5px; /* Space between the "Is Active?" label and the checkbox */
+  }
+  
+  .inline-group input[type="checkbox"] {
+    margin-right: 10px; /* Space between the checkbox and the delete button */
+  }
+  
+  .overflow {
+    overflow: auto;
+    max-height: 500px;
+  }

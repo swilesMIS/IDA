@@ -1,0 +1,85 @@
+.search-title-container {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6; /* Light gray border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow to match the mockup */
+  padding: 20px; /* Inner spacing to match the mockup */
+  margin-left: 5.4%;
+}
+
+.search-result-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 85%;
+  box-sizing: border-box;
+  margin-left: 7.5%;
+  font-size: 1rem;
+}
+
+.search-result-tile h2 {
+  margin-bottom: 5px;
+  text-align: left;
+  margin: 0 0 5px 0;
+  color: #8f1115;
+}
+
+.search-result-tile-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.search-result-button {
+  white-space: nowrap;
+  width: 110%;
+  text-align: center;
+  all: unset;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #8f1115;
+  background-color: #ffffff;
+  color: #8f1115;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.add-filter-button, .add-linkgrid-button, .add-dataset-button {
+  white-space: nowrap;
+  width: 110%;
+  text-align: center;
+  all: unset;
+  cursor: pointer;
+  margin-left: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #8f1115;
+  background-color: #ffffff;
+  color: #8f1115;
+  font-weight: bold;
+  /* Double check with Logan */
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+}
+
+.search-result-button:hover, .add-filter-button:hover, .add-linkgrid-button:hover, .add-dataset-button:hover {
+  background-color: #8f1115;
+  color: #ffffff;
+}

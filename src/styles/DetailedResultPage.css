@@ -1,0 +1,177 @@
+.detailed-result-page {
+  flex: 1; /* This will make it fill the container */
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  align-items: center;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.title-section{
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 20px;
+}
+
+.main-content {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 1400px;
+  gap: 20px;
+}
+
+/* .main-content {
+  display: flex;
+  padding: 0 5%;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100%;
+} */
+
+.title-text {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.description-text {
+  font-style: italic;
+  color: #666
+}
+
+.content-background {
+  background-color: #f2f2f2;
+  padding: 20px 100%;
+}
+
+.data-header {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+/* .sidebar {
+  flex: 1;
+  flex: 0 0 25%;
+} */
+
+/* .main-data {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+} */
+
+.database-info {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+/* table styles here */
+.database-info th,
+.database-info td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #bfbebe;
+}
+
+.database-info th {
+  background-color: #f2f2f2;
+  width: 40%;
+}
+
+.data-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.database-description {
+  width: 100%;
+  font-size: 1.2rem;
+}
+.database-description p {
+  padding: 10px 20px;
+  background-color: #cecccc;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.edit-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.data-preview table {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.data-preview th {
+  background-color: #b8b8b8;
+  color: black;
+}
+
+.data-preview td {
+  background-color: #ffffff;
+}
+
+.access-level p {
+  padding: 10px 20px;
+  background-color: #cecccc;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.detailed-result-page button {
+  align-self: center;
+  justify-content: center;
+  padding: 10px 20px;
+  max-width: fit-content;
+  background-color: #8f1115;
+  color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.7s ease; /* For a hover effect */
+}
+
+.detailed-result-page button:hover {
+  background-color: grey; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    padding-right: 0;
+    border-right: none;
+    flex-basis: auto; /* Reset the width for mobile */
+  }
+
+  .main-data {
+    padding-left: 0;
+  }
+
+  .database-description {
+    margin-left: 0;
+    max-width: 100%;
+    order: -1;
+  }
+}

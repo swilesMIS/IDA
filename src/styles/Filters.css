@@ -1,0 +1,165 @@
+.filter-box {
+    background-color: rgb(
+      243,
+      243,
+      243
+    ); /* Set background color for the filter box */
+    padding: 16px; /* Add some padding to the filter box */
+    padding-top: 0px;
+    border: 1px solid #ccc; /* Add a border to the filter box */
+    border-radius: 4px; /* Add rounded corners to the filter box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px; /* Add spacing between filter boxes */
+    height: 250px;
+    border-left: 5px solid #8f1115;
+    position: relative;
+  }
+  
+  .filter-box h3 {
+    color: #333; /* Set the title color */
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 8px;
+  }
+  
+  .filter-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 8px;
+  }
+  
+  .filter-options {
+    max-height: 165px; /* Limit the height and add a scrollbar if options overflow */
+    overflow-y: auto; /* Enable vertical scrolling for options */
+    font-size: 14px;
+    padding-top: 3px;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .filter-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filter-options input[type="checkbox"] {
+    /* Hide the default checkbox */
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .custom-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  label {
+    position: relative;
+    padding-left: 30px; /* Space for custom checkbox */
+  }
+  
+  label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  label::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    /* Hide the pseudo-element by default */
+    opacity: 0;
+  }
+  
+  .custom-checkbox:checked + label::before {
+    border-color: #8f1115;
+  }
+  
+  .custom-checkbox:checked + label::after {
+    content: "\2714";
+    color: darkgray;
+    font-size: 16px;
+    font-weight: 5000;
+    left: 5px;
+    top: 45%;
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  
+  .filter-label {
+    display: block;
+    margin: 8px 0;
+    color: #666; /* Set the label color */
+  }
+  
+  .filter-label input[type="checkbox"] {
+    margin-right: 8px; /* Add spacing between checkbox and label */
+  }
+  
+  .filters-container {
+    display: flex;
+    flex-direction: column; /* Stack filters vertically */
+    align-items: flex-start; /* Align filters to the left */
+    margin-right: 16px; /* Add some spacing between filters and content */
+    padding-left: 20px;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .filter-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-input-container .filter-search-icon {
+    position: absolute;
+    font-size: 20px;
+    left: 12px; 
+    top: 47%; 
+    transform: translateY(
+      -50%
+    ); /* Ensure it's centered regardless of the height */
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  .filter-input-container .filter-search-input {
+    padding-left: 37px !important;
+    width: 100%;
+  }
+
+  .pencil-edit-icon {
+    position: absolute;
+    right: 5%; 
+    top: 5%; 
+    cursor: pointer;
+  }
