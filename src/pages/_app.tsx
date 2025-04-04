@@ -13,12 +13,14 @@ import "../styles/SearchResult.css";
 import SearchPage from './SearchPage/SearchPage';
 import DetailedResultPage from './DetailedResultPage/DetailedResultPage';
 import SearchResultPage from './SearchResultPage/SeachResultPage'; 
+import StartPage from './index'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* Page routes are automatically handled based on the pages directory */}
+        <SearchResultPage />
       </header>
     </div>
   );
